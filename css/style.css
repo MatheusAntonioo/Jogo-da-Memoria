@@ -98,7 +98,7 @@ main{
 }
 
 @media(max-width: 650px){
-  .memory-card{
+  #easy{
     width: 100px;
     height: 100px;
   }
@@ -107,7 +107,7 @@ main{
   }
 }
 @media(max-width:970px){
-  .memory-card{
+  #medio{
     width: 90px;
     height: 90px;
   }
@@ -116,7 +116,7 @@ main{
   }
 }
 @media(max-width:1610px){
-  .memory-card{
+  #hard{
     width: 90px;
     height: 90px;
   }
@@ -125,7 +125,7 @@ main{
   }
 }
 @media(max-width:1010px){
-  .memory-card{
+  #hard{
     width: 80px;
     height: 80px;
   }
@@ -134,7 +134,7 @@ main{
   }
 }
 @media(max-width:750px){
-  .memory-card{
+  #hard{
     width: 65px;
     height: 65px;
   }
