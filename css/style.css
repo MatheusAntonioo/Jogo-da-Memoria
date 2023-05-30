@@ -2,28 +2,77 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body{
-  height: 100vh;
-  display: flex;
+  height: 100%;
+  display: grid;
   background-color: #22003d;
 }
 
+header{
+  display: flex;
+  max-width: 350px;
+  height: 100px;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  padding: 2rem;
+  background-color: #bf29dd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+header a{
+  font-size: 1.2rem;
+  color: #fff;
+}
+header a:hover{
+  color: #000;
+}
+
+.navigation{
+  display: flex;
+  gap: 3rem;
+  cursor: pointer;
+}
+
+main{
+  margin-top: 50px;
+  display: flex;
+}
+
+
+
 #cardboard{
-  width: 640px;
-  height: 640px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
 }
 
+.easy{
+  width: 640px;
+}
+
+.medio{
+  width: 960px;
+}
+
+.hard{
+  width: 1600px;
+}
+
 .memory-card{
-  width: calc(25% - 10px);
-  height: 25%;
+  width: 150px;
+  height: 150px;
+
   margin: 5px;
   transform-style: preserve-3d ;
+  transition: 0.3s;
   position: relative;
+  backface-visibility: hidden;
 }
 
 .memory-card:active{
@@ -40,10 +89,56 @@ body{
   height: 100%;
   padding: 20px;
   border-radius: 8px;
-  background-color: #bf29dd;
   position: absolute;
+  background-color: #bf29dd;
 }
 
 .front-face{
   transform: rotateY(180deg);
+}
+
+@media(max-width: 650px){
+  .memory-card{
+    width: 100px;
+    height: 100px;
+  }
+  .easy{
+    width: 330px;
+  }
+}
+@media(max-width:970px){
+  .memory-card{
+    width: 90px;
+    height: 90px;
+  }
+  .medio{
+    width: 400px;
+  }
+}
+@media(max-width:1610px){
+  .memory-card{
+    width: 90px;
+    height: 90px;
+  }
+  .hard{
+    width: 1000px;
+  }
+}
+@media(max-width:1010px){
+  .memory-card{
+    width: 80px;
+    height: 80px;
+  }
+  .hard{
+    width: 720px;
+  }
+}
+@media(max-width:750px){
+  .memory-card{
+    width: 65px;
+    height: 65px;
+  }
+  .hard{
+    width: 380px;
+  }
 }

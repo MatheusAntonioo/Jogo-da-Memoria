@@ -1,11 +1,25 @@
 const cardBoard = document.querySelector("#cardboard");
 const images = [
+  'caldeirao.png',
+  'capa.png',
+  'carro.png',
   'chave.png',
+  'coruja.png',
+  'dobby.png',
+  'frasco.png',
   'hogwarts.png',
   'mapa.png',
   'oculos.png',
+  'onibus.png',
+  'ovo.png',
+  'pedra.png',
   'pomo.png',
   'salgueiro.png',
+  'sapo.png',
+  'trem.png',
+  'varinha.png',
+  'vassoura.png',
+  'viratempo.png',
 ];
 
 let qnt = images.length * 2;
